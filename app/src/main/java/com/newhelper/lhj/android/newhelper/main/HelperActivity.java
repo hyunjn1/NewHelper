@@ -1,7 +1,6 @@
-package com.newhelper.lhj.android.newhelper.helpermain;
+package com.newhelper.lhj.android.newhelper.main;
 
 import android.support.v4.app.Fragment;
-import android.view.View;
 
 import com.newhelper.lhj.android.newhelper.SingleFragmentActivity;
 

@@ -1,4 +1,6 @@
-package com.newhelper.lhj.android.newhelper.helpermain;
+package com.newhelper.lhj.android.newhelper.main;
+
+import android.support.v4.app.Fragment;
 
 import com.newhelper.lhj.android.newhelper.BasePresenter;
 import com.newhelper.lhj.android.newhelper.BaseView;
@@ -9,10 +11,12 @@ import com.newhelper.lhj.android.newhelper.BaseView;
 
 public interface MainContract {
 
-    interface View extends BaseView<Presenter>{}
+    interface View extends BaseView<Presenter>{
+        void setChildFragment(Fragment child);
+    }
 
     interface Presenter extends BasePresenter{
-
+        void onLabelClicked(int viewId);
     }
 
 }
