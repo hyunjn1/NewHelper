@@ -1,0 +1,7 @@
+<resources>
+    <!--main fragment-->
+    <string name="app_name">Helper!</string>
+    <string name="main_basic_tab">Basic</string>
+    <string name="main_oneDay_tab">OneDay</string>
+
+</resources>
