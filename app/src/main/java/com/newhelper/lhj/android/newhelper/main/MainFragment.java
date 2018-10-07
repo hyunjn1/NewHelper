@@ -16,6 +16,7 @@ import static com.google.common.base.Preconditions.*;
 public class MainFragment extends Fragment implements View.OnClickListener, MainContract.View{
 
     MainContract.Presenter mPresenter;
+    public static final int CHILD_CONTAINER = R.id.Main_FL_ChildContainer;
 
     public static Fragment newInstance(){
         return new MainFragment();
@@ -48,7 +49,7 @@ public class MainFragment extends Fragment implements View.OnClickListener, Main
     public void setChildFragment(Fragment child) {
         FragmentTransaction childFragmentTran = getChildFragmentManager().beginTransaction();
         if(!child.isAdded()){
-            childFragmentTran.replace(R.id.Main_FL_ChildContainer, child)
+            childFragmentTran.replace(CHILD_CONTAINER, child)
                     .addToBackStack(null)
                     .commit();
         }

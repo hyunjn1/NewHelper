@@ -10,12 +10,21 @@ import android.view.ViewGroup;
 import com.newhelper.lhj.android.newhelper.R;
 import com.newhelper.lhj.android.newhelper.main.child.ChildFragment;
 
-public class ChildBasicFragment extends ChildFragment {
+import static com.google.common.base.Preconditions.*;
+
+public class ChildBasicFragment extends ChildFragment implements ChildBasicContract.View{
+    ChildBasicContract.Presenter mPresenter;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.basictab_fragement, container, false);
 
         return view;
+    }
+
+    @Override
+    public void setPresenter(ChildBasicContract.Presenter presenter) {
+        mPresenter = checkNotNull(presenter);
     }
 }

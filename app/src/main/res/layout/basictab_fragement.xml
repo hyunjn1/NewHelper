@@ -1,13 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/basicTabFragment_rootLayout_RL"
+    android:id="@+id/RL_ChildBasic_BaseLayout"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
-    <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/LR_ChildBasic_CalendarOperatorLayout">
+
+        <ImageView
+            style="@style/Child_CalendarOperator"
+            android:id="@+id/IV_ChildBasic_CalendarPreButton"
+            android:src="@drawable/button_calendar_pre"
+            android:contentDescription="@string/child_button_desc"/>
+        <TextView
+            style="@style/Child_TitleDateFont"
+            android:id="@+id/TV_Child_TitleDate"
+            android:hint="@string/child_title_hint"/>
+        <ImageView
+            style="@style/Child_CalendarOperator"
+            android:id="@+id/IV_ChildButton_CalendarNextButton"
+            android:src="@drawable/button_calendar_next"
+            android:contentDescription="@string/child_button_desc"/>
+
+    </LinearLayout>
+
+    <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hello, I am Basic"/>
+        android:layout_below="@id/LR_ChildBasic_CalendarOperatorLayout">
+
+        <GridView
+            android:id="@+id/GV_ChildBasic_GridCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="7"/>
+
+    </FrameLayout>
 
 </RelativeLayout>
