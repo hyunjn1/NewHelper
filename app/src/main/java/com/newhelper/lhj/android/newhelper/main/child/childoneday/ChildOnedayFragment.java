@@ -7,8 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.newhelper.lhj.android.newhelper.R;
 import com.newhelper.lhj.android.newhelper.main.child.ChildFragment;
+import com.newhelper.lhj.android.newhelper.R;
 
 public class ChildOnedayFragment extends ChildFragment {
     @Nullable

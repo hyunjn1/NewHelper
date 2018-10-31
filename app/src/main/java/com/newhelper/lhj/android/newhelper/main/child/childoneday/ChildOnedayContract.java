@@ -4,10 +4,10 @@ import com.newhelper.lhj.android.newhelper.BasePresenter;
 import com.newhelper.lhj.android.newhelper.BaseView;
 
 public interface ChildOnedayContract {
-    interface View extends BaseView<Presenter>{
+    interface View extends BaseView<Presenter> {
 
     }
-    interface Presenter extends BasePresenter{
+    interface Presenter extends BasePresenter {
 
     }
 }

@@ -1,11 +1,12 @@
 <resources>
-    <!--main fragment-->
+    <!-- main fragment -->
     <string name="app_name">Helper!</string>
     <string name="main_basic_tab">Basic</string>
     <string name="main_oneDay_tab">OneDay</string>
 
-    <!--child basic fragment -->
+    <!-- child basic fragment -->
     <string name="child_button_desc">Calendar operation button</string>
     <string name="child_title_hint">2018년 10월</string>
+
 
 </resources>

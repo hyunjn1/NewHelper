@@ -16,7 +16,7 @@ public interface MainContract {
     }
 
     interface Presenter extends BasePresenter{
-        void onLabelClicked(int viewId);
+        void onLabelClicked(android.view.View view);
     }
 
 }

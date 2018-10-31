@@ -1,6 +1,7 @@
 package com.newhelper.lhj.android.newhelper.main;
 
 import android.app.Activity;
+import android.view.View;
 
 import com.newhelper.lhj.android.newhelper.main.child.ChildFragment;
 
@@ -22,7 +23,7 @@ public class MainPresenter implements MainContract.Presenter {
     }
 
     @Override
-    public void onLabelClicked(int viewId) {
-        mView.setChildFragment(ChildFragment.newInstance(viewId));
+    public void onLabelClicked(View view) {
+        mView.setChildFragment(ChildFragment.newInstance(ChildFragment.ChildType.valueOf(view.getTag().toString())));
     }
 }

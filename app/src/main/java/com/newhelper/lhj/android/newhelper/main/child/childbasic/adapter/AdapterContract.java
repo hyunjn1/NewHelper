@@ -1,17 +1,23 @@
 package com.newhelper.lhj.android.newhelper.main.child.childbasic.adapter;
 
-import com.newhelper.lhj.android.newhelper.main.child.model.CalendarDate;
+import android.view.LayoutInflater;
+
+import com.newhelper.lhj.android.newhelper.model.CalendarDate;
+
+import java.util.List;
 
 public interface AdapterContract {
-    interface CalendarDataModel {
-        void add(CalendarDate calendarDate);
-        CalendarDate remove(int position);
-        CalendarDate getDate(int position);
-        int getSize();
-
+    interface CalendarAdapterModel {
+        void addAll(List<CalendarDate> list);
+        void clear();
+        int getCount();
+        CalendarDate getItem(int position);
+        String getItemUUID(int position);
     }
 
     interface CalendarAdapterView {
-
+        void refresh();
+        void setItemText(int position);
+        LayoutInflater getInflater();
     }
 }

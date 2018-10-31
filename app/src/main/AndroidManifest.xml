@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".main.HelperActivity">
+        <activity android:name="com.newhelper.lhj.android.newhelper.main.HelperActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
